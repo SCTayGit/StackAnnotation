@@ -17,7 +17,8 @@ public class MyStringStackTest extends TestCase {
 	private String s1, s2;
 	
 	public MyStringStackTest(String name) {
-		super(name);
+	super(name);
+
 	}
 	@Before
 	public void setUp() throws Exception {
@@ -27,6 +28,13 @@ public class MyStringStackTest extends TestCase {
 
 	@After
 	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testSC {
+		MyStringStack stack = new MyStringStack();
+        stack.push (s1);
+		assertTrue (stack.isEmpty());
 	}
 
 	@Test
